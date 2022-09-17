@@ -1,0 +1,110 @@
+	<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<!-- Mirrored from blogzine.webestica.com/index-5.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Jun 2021 18:48:18 GMT -->
+<head>
+	<title>Blogzine - Blog and Magazine Bootstrap 5 Theme</title>
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Webestica.com">
+	<meta name="description" content="Bootstrap based News, Magazine and Blog Theme">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" th:href="@{/news/assets/images/favicon.ico}">
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&amp;family=Rubik:wght@400;500;700&amp;display=swap" rel="stylesheet">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" th:href="@{/news/assets/vendor/font-awesome/css/all.min.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/news/assets/vendor/bootstrap-icons/bootstrap-icons.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/news/assets/vendor/tiny-slider/tiny-slider.css}">
+
+	<!-- Theme CSS -->
+	<link id="style-switch" rel="stylesheet" type="text/css" th:href="@{/news/assets/css/style.css}">
+</head>
+
+<body>
+
+<!-- =======================
+Header START -->
+<div th:replace="news/partials/_header/_header :: header"></div>
+<!-- =======================
+Header END -->
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+
+<!-- =======================
+Main hero START -->
+<div th:replace="news/partials/_content/_mainHero :: mainHero"></div>
+<!-- =======================
+Main hero END -->
+
+<!-- =======================
+Highlights START -->
+<div th:replace="news/partials/_content/_highlights :: highlights"></div>
+<!-- =======================
+Highlights END -->
+
+
+<!-- =======================
+Adv START -->
+<section class="p-0">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<a href="#" class="d-block card-img-flash">
+					<img src="assets/images/adv-3.png" alt="">
+				</a>
+				<small class="text-end d-block mt-1">Advertisement</small>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- =======================
+Adv END -->
+
+<!-- =======================
+Small post START -->
+<div th:replace="news/partials/_content/_smallPost :: smallPost"></div>
+<!-- =======================
+Small post END -->
+
+<!-- =======================
+Tab post START -->
+<div th:replace="news/partials/_content/_posts :: posts"></div>
+<!-- =======================
+Tab post END -->
+
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+
+<!-- =======================
+Footer START -->
+<div th:replace="news/partials/_footer/_footer :: footer"></div>
+<!-- =======================
+Footer END -->
+
+<!-- Back to top -->
+<div class="back-top"><i class="bi bi-arrow-up-short"></i></div>
+
+<!-- =======================
+JS libraries, plugins and custom scripts -->
+
+<!-- Bootstrap JS -->
+<script th:src="@{/news/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js}"></script>
+
+<!-- Vendors -->
+<script th:src="@{/news/assets/vendor/tiny-slider/tiny-slider.js}"></script>
+
+<!-- Template Functions -->
+<script th:src="@{/news/assets/js/functions.js}"></script>
+
+</body>
+
+<!-- Mirrored from blogzine.webestica.com/index-5.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 25 Jun 2021 18:48:20 GMT -->
+</html>
